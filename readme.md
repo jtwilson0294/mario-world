@@ -7,6 +7,7 @@
 ## What
 
 - A responsive HTML/CSS site using semantic HTML5
+- Starting with [HTML & CSS Crash Course Tutorial #6 - HTML 5 Semantics](https://www.youtube.com/watch?v=kGW8Al_cga4&list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G&index=6)
 
 ## Why
 
