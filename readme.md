@@ -11,4 +11,5 @@
 
 ## Why
 
-- This repo and short video course will allow me to practice semantic HTML5 for a11y AND git/GitHub
+- This repo and short video course will allow me to practice semantic HTML5 for a11y
+- I am also using this project to learn git CLI
