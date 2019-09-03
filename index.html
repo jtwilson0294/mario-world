@@ -9,5 +9,76 @@
       Mario World Tutorial - an HTML and CSS Tutorial by The Net Ninja
     </title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Headers were added in HTML5 and usually contain the site title and navigation -->
+      <h1>Marioworld</h1>
+    </header>
+
+    <section class="banner">
+      <img src="img/banner.png" alt="marioworld welcome banner" />
+      <div class="welcome">
+        <!-- This div will be used to sit on top of the banner image -->
+        <h2>Welcome to <br /><span>Marioworld</span></h2>
+      </div>
+    </section>
+
+    <nav class="main-nav">
+      <!-- Using Emmet, these list items were generated with ul>li*4>a -->
+      <ul>
+        <li><a href="#" class="join">Join the Club</a></li>
+        <li><a href="#">Latest News</a></li>
+        <li><a href="#">New Games</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- There should only be one main tag per page much like there should only be one h1-->
+      <article>
+        <h2>It's a me, Mario!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+          voluptatum aut hic, ratione fuga officiis aliquam laboriosam
+          cupiditate tempore? Explicabo corporis quam quasi et, earum inventore
+          pariatur doloribus officia veritatis quas placeat ducimus nostrum sit
+          excepturi esse illum laudantium nemo eaque, voluptatum doloremque. In
+          fuga dicta illum? Incidunt esse praesentium molestiae sint
+          perspiciatis consequuntur nam, laudantium enim dicta tenetur, hic eius
+          laborum quae at temporibus eligendi iusto, nulla odit! Impedit maiores
+          obcaecati quaerat adipisci illo quam autem molestiae, libero nobis
+          quidem debitis aut natus voluptatibus expedita, neque iste deserunt.
+          Minus impedit sequi similique neque perferendis quia nemo placeat
+          natus animi?
+        </p>
+      </article>
+      <!-- Again, Emmet was used; ul>li*2>img -->
+      <ul class="images">
+        <li><img src="img/thumb-1.png" alt="Descriptive alt text" /></li>
+        <li><img src="img/thumb-2.png" alt="More descriptive alt text" /></li>
+      </ul>
+    </main>
+
+    <section class="join-form">
+      <h2>Join Today!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in
+        assumenda fuga ut cum quis, animi autem facere, saepe consectetur,
+        veritatis laborum cumque pariatur quod?
+      </p>
+      <form>
+        <input
+          type="email"
+          name="email"
+          placeholder="Type your email here"
+          required
+        />
+        <!-- Maybe add a button? -->
+      </form>
+    </section>
+
+    <footer>
+      <p class="copyright">Copyright 2019 - Marioworld</p>
+    </footer>
+  </body>
 </html>
