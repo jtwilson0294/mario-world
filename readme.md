@@ -23,3 +23,10 @@
 - Forms
 - Submitting forms with buttons
 - Why does form text show up in the URL?
+
+## CSS
+
+```css
+selector > other_selector: will only select DIRECT children
+selector other_selector: will select any contained children
+```
