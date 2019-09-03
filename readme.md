@@ -13,3 +13,7 @@
 
 - This repo and short video course will allow me to practice semantic HTML5 for a11y
 - I am also using this project to learn git CLI
+
+## Tools
+
+- Emmet: https://docs.emmet.io/abbreviations/
