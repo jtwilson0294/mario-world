@@ -17,3 +17,9 @@
 ## Tools
 
 - Emmet: https://docs.emmet.io/abbreviations/
+
+## Things to explore further
+
+- Forms
+- Submitting forms with buttons
+- Why does form text show up in the URL?
