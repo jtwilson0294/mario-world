@@ -1,4 +1,33 @@
 /* selector > other_selector will only select DIRECT children whereas selector other_selector will select any contained children */
+* {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+header {
+  background-color: #f63232;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  /* Without width:100% the fixed positioning causes the header to take up a small section in the upper left corner */
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* All elements by default have a z-index of 0; the higher the number, the further forward it is on a page */
+  z-index: 1;
+}
+
+header h1 {
+  color: white;
+  border: 8px solid white;
+  /* When two values are given for padding/margin, the first is for top and bottom, second is for left and right */
+  padding: 8px 12px;
+  /* inline display is needed as the border around a pure block level element extends the entire width of the page - not what is wanted here. Inline display means the element only takes up as much room as it needs, so the border will only surround the content - in this case the title; however top and bottom margin are ignored. Inline block is the "best of both worlds" - the element only takes up what is needed, but top and bottom margin are included. */
+  display: inline-block;
+  border-radius: 50px;
+}
+
 .banner {
   position: relative;
 }
@@ -25,10 +54,115 @@
 .banner h2 {
   /* Could also select by .banner > .welcome > h2 */
   font-size: 74px;
+  text-align: center;
 }
 
 .banner h2 span {
   /* em will take the current font size value of the parent and multiply it by the amount given */
   font-size: 1.3em;
-  color: red;
+  color: #f91f19;
+}
+
+nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  /* Fixes wrapping issue with 25% width and inline-block */
+  white-space: nowrap;
+  /* margin 0 auto with a max width will center the element/container on the page */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* Mix between static and fixed - will become fixed once a given distance from the top of the page as denoted by top: */
+  position: sticky;
+  top: 108px;
+}
+
+nav li {
+  /* If width: 25% and inline-block are used together, the last element will display on the next line due to whitespace */
+  /* nowrap whitespace needs to be added to fix - was added in the nav styling above */
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+/* Styles the anchor tags with a class of join that are children of li and grandchildren of nav */
+nav li a.join {
+  color: #f63232;
+}
+
+main {
+  /* max-width and width work in tandem in this case: it will never grow larger than 100% of the viewport on screens <1200px, but will be limited to 1200px on larger screens */
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  /* Width is 100% PLUS padding - this will incorporate the padding into the total width */
+  box-sizing: border-box;
+}
+
+article h2 {
+  color: #f63232;
+  font-size: 48px;
+}
+
+article p {
+  /* Determines the vertical space between lines */
+  margin-top: 0.5em;
+  line-height: 2em;
+  color: #4b4b4b;
+}
+
+.images {
+  text-align: center;
+  margin: 80px 0;
+  /* Needed again for inline-block to allow content to sit adjacent on the same line */
+  white-space: nowrap;
+}
+
+.images li {
+  /* inline-block allows the content to sit next to each other while maintaining normal margin and padding behavior */
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+}
+
+.images li img {
+  /* Without max-width, the images will overlap - this sets the img width to 100% of the parent li which is set to 40% in the rules above */
+  max-width: 100%;
+}
+
+.join-form {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4b4b4b;
+}
+
+.join-form h2 {
+  font-size: 36px;
+}
+
+.join-form p {
+  margin-top: 20px;
+}
+
+form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+  text-align: center;
+}
+
+footer {
+  background: #f63232;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
