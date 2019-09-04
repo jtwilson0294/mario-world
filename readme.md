@@ -30,3 +30,10 @@
 selector > other_selector: will only select DIRECT children
 selector other_selector: will select any contained children
 ```
+
+- Pseudoclasses
+  Style elements when they are in a certain state
+
+```css
+:hover ;
+```
