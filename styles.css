@@ -1,0 +1,34 @@
+/* selector > other_selector will only select DIRECT children whereas selector other_selector will select any contained children */
+.banner {
+  position: relative;
+}
+
+/* The below syntax targets images that are children of the banner class */
+.banner > img {
+  /* Prevents oversized elements to eliminate horizontal scrolling */
+  max-width: 100%;
+}
+
+.banner > .welcome {
+  background-color: #feb614;
+  color: white;
+  padding: 30px;
+  /* absolute only works if a parent has a declared position that isn't static */
+  /* absolute positioning removes the 'saved space' for that element; i.e. all content below moves up */
+  position: absolute;
+
+  /* Read these as 'move from the left x amount', 'move from the top y amount' */
+  left: 0px;
+  top: 30%;
+}
+
+.banner h2 {
+  /* Could also select by .banner > .welcome > h2 */
+  font-size: 74px;
+}
+
+.banner h2 span {
+  /* em will take the current font size value of the parent and multiply it by the amount given */
+  font-size: 1.3em;
+  color: red;
+}
