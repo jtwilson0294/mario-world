@@ -170,7 +170,7 @@ footer {
   text-align: center;
 }
 
-/* Pseudoclasses */
+/* Pseudo-classes */
 
 nav li a:hover {
   text-decoration: underline;
@@ -191,4 +191,16 @@ form input:valid {
   /* This will turn the border of the form input green when a valid email is entered - not good for red/green colorblind */
 
   border-color: green;
+}
+
+/* Pseudo-elements */
+
+article p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+*::selection {
+  background-color: #f63232;
+  color: white;
 }
