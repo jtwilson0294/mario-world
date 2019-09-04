@@ -49,6 +49,9 @@ header h1 {
   /* Read these as 'move from the left x amount', 'move from the top y amount' */
   left: 0px;
   top: 30%;
+  /* It is usually better to make the shadow color a darker/more gray version of the color it is / is hovering over */
+  /* Syntax is x offset | y offset | blur radius | spread radius | color ; blur and spread can be omitted*/
+  box-shadow: 8px 8px 5px rgb(192, 145, 37);
 }
 
 .banner h2 {
