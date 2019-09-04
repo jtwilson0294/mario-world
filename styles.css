@@ -186,3 +186,9 @@ form input:focus {
   /* Removing the default element outline is not always the best thing to do for usability */
   outline: none;
 }
+
+form input:valid {
+  /* This will turn the border of the form input green when a valid email is entered - not good for red/green colorblind */
+
+  border-color: green;
+}
