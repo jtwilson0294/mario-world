@@ -180,3 +180,9 @@ nav li a:hover {
   position: relative;
   top: -4px;
 }
+
+form input:focus {
+  border-color: #f63232;
+  /* Removing the default element outline is not always the best thing to do for usability */
+  outline: none;
+}
