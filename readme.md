@@ -31,9 +31,12 @@ selector > other_selector: will only select DIRECT children
 selector other_selector: will select any contained children
 ```
 
-- Pseudoclasses
+- Pseudo-classes
   Style elements when they are in a certain state
 
 ```css
 :hover ;
+:focus ;
 ```
+
+[This is the MDN link for pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
