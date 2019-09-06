@@ -226,3 +226,66 @@ article p::first-line {
     font-size: 50px;
   }
 }
+@media screen and (max-width: 750px) {
+  /* This targets the <br> on the banner only to allow the text to return to one line */
+  .banner .welcome br {
+    display: none;
+  }
+
+  /* Brings welcome message from on top of banner to below it */
+  .banner .welcome {
+    position: relative;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .banner h2 {
+    font-size: 25px;
+  }
+
+  /* Was will take on parent font size; changed above */
+  .banner h2 span {
+    font-size: 1em;
+  }
+
+  article h2 {
+    text-align: center;
+  }
+
+  article p {
+    text-align: center;
+  }
+
+  /* Displaying images on top of each other with block and increasing width from 40% to 100% */
+  .images li {
+    display: block;
+    width: 100%;
+    /* Auto left/right margin will center elements */
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  /* Rendering nav links vertically instead of side-by-side for easier click on mobile */
+  nav li {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 12px 0;
+    padding: 10px 0;
+  }
+
+  header {
+    /* Header no longer fixed - will not scroll */
+    position: relative;
+    /* Bringing padding on left/right to 0 due to horizontal scrolling */
+    padding: 20px 0;
+  }
+
+  nav {
+    /* Removing extra space from sticky position when header was fixed */
+    top: 0;
+    padding: 5px 0;
+  }
+}
