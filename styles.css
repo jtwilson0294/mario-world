@@ -63,7 +63,6 @@ header h1 {
 .banner h2 span {
   /* em will take the current font size value of the parent and multiply it by the amount given */
   font-size: 1.3em;
-  color: #f91f19;
 }
 
 nav {
@@ -193,6 +192,10 @@ form input:valid {
   border-color: green;
 }
 
+.banner h2 span:hover {
+  color: #f63232;
+}
+
 /* Pseudo-elements */
 
 article p::first-line {
@@ -203,4 +206,23 @@ article p::first-line {
 *::selection {
   background-color: #f63232;
   color: white;
+}
+
+/* Media Queries */
+
+/* max-width applies styling to the width given and down; min-width applies styling to the width given and up */
+@media screen and (max-width: 1400px) {
+  .banner h2 {
+    font-size: 60px;
+  }
+
+  nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner h2 {
+    font-size: 50px;
+  }
 }
