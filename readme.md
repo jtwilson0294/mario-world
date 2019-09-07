@@ -20,10 +20,11 @@
 
 ## Things to explore further
 
-- Forms
+- Forms and form styling
 - Submitting forms with buttons
 - Why does form text show up in the URL?
 - What are some good uses for ::before and ::after pseudo-elements?
+- Collapsible nav for mobile - hamburger icons and such?
 
 ## CSS
 
