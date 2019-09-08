@@ -25,6 +25,7 @@
 - Why does form text show up in the URL?
 - What are some good uses for ::before and ::after pseudo-elements?
 - Collapsible nav for mobile - hamburger icons and such?
+- [Ripple effects](https://codepen.io/finnhvman/post/pure-css-ripple-with-minimal-effort)
 
 ## CSS
 
