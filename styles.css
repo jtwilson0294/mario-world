@@ -171,6 +171,10 @@ form button {
   background-color: #f63232;
   color: white;
   font-weight: bold;
+
+  /* Hover transition */
+  background-position: center;
+  transition: background 0.5s;
 }
 
 form label {
@@ -210,6 +214,10 @@ form input.email:valid {
 
 .banner h2 span:hover {
   color: #f63232;
+}
+
+form button:hover {
+  background-color: #c91515;
 }
 
 /* Pseudo-elements */
@@ -278,6 +286,19 @@ article p::first-line {
     width: 100%;
     /* Auto left/right margin will center elements */
     margin: 20px auto;
+  }
+
+  /*  Adds ripple effect for mobile click */
+  form button:hover {
+    background: #f63232 radial-gradient(circle, transparent 1%, #f63232 1%)
+      center/15000%;
+  }
+
+  /* Adds ripple effect for mobile click */
+  form button:active {
+    background-color: white;
+    background-size: 100%;
+    transition: background 0s;
   }
 }
 
