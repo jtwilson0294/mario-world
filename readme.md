@@ -1,5 +1,9 @@
 # The Net Ninja's 'Mario World' Tutorial
 
+## Github Pages
+
+Follow this link to view the site based on the `master` branch:
+https://jtwilson0294.github.io/mario-world/
 ## Who
 
 - The Net Ninja is a YouTube programming instructor from the UK
